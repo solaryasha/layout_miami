@@ -38,6 +38,10 @@ small {
   line-height: 27px;
   color: #9fadc2; }
 
+button {
+  font-weight: bold;
+  font-size: 16px; }
+
 html {
   font-family: "Roboto", sans-serif; }
 
@@ -294,6 +298,11 @@ html {
   border: 2px solid #0075ff;
   border-radius: 8px;
   color: #0075ff; }
+  .gallery__button:hover {
+    -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    color: #fff;
+    background-color: #0075ff; }
   @media (min-width: 768px) {
     .gallery__button {
       width: 188px; } }
@@ -386,7 +395,13 @@ html {
   background: #f7f8ff;
   border: 1px solid #fff;
   border-radius: 8px;
-  outline: none; }
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s; }
+  .form__input:hover {
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5); }
   .form__input--textarea {
     height: 144px;
     resize: none; }
@@ -441,7 +456,15 @@ html {
   display: inline-block;
   width: 153px;
   height: 153px;
-  margin-bottom: 28px; }
+  margin-bottom: 28px;
+  cursor: pointer;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s; }
+  .testimonials__image:hover {
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5); }
 
 .testimonials__name {
   margin: 24px 0 6px; }
@@ -578,15 +601,10 @@ html {
   .link:hover {
     opacity: 0.5; }
 
-.button {
-  font-weight: bold;
-  font-size: 16px;
-  -webkit-transition: -webkit-box-shadow 0.3s;
-  transition: -webkit-box-shadow 0.3s;
-  transition: box-shadow 0.3s;
-  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s; }
-  .button:hover {
-    -webkit-box-shadow: 0 3px 6px rgba(0, 117, 255, 0.5);
-            box-shadow: 0 3px 6px rgba(0, 117, 255, 0.5); }
+.button:hover {
+  -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  color: #0075ff;
+  background-color: #fff; }
 
 /*# sourceMappingURL=main.css.map */
