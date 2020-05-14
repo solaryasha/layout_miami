@@ -6,7 +6,7 @@ h1 {
   font-weight: bold;
   letter-spacing: -1px;
   color: #fff; }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     h1 {
       font-size: 60px;
       line-height: 60px;
@@ -416,6 +416,8 @@ html {
           box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
   border-radius: 8px;
   color: #fff; }
+  .form__button--contacts {
+    margin: 35px 0 16px; }
 
 .testimonials__people {
   display: -webkit-box;
@@ -483,24 +485,21 @@ html {
     .testimonials__comment {
       max-width: 240px; } }
 
-.contacts__section {
-  margin-bottom: 1.5rem; }
-  @media (min-width: 768px) {
-    .contacts__section {
-      max-width: 152px; } }
-
 .contacts__heading {
   display: block;
   margin-bottom: 8px; }
-
-.contacts__button {
-  margin: 35px 0 16px; }
 
 .contacts__link {
   -webkit-transition: color 0.3s;
   transition: color 0.3s; }
   .contacts__link:hover {
     color: rgba(0, 117, 255, 0.5); }
+
+.contacts__section {
+  margin-bottom: 1.5rem; }
+  @media (min-width: 768px) {
+    .contacts__section {
+      max-width: 152px; } }
 
 @media (min-width: 768px) {
   .contacts__grid {
@@ -516,12 +515,14 @@ html {
        -moz-column-gap: 20%;
             column-gap: 20%;
     grid-template-areas: "phone address" "email address"; }
-  .contacts__phone {
-    grid-area: phone; }
-  .contacts__address {
-    grid-area: address; }
-  .contacts__email {
-    grid-area: email; } }
+  .contacts__section {
+    max-width: 152px; }
+    .contacts__section--phone {
+      grid-area: phone; }
+    .contacts__section--address {
+      grid-area: address; }
+    .contacts__section--email {
+      grid-area: email; } }
 
 .footer {
   position: relative;
@@ -551,6 +552,24 @@ html {
       .footer__logo {
         bottom: 40px; } }
 
+.crown {
+  text-align: center;
+  margin-bottom: 41px; }
+  @media (min-width: 768px) {
+    .crown {
+      margin-bottom: 79px; } }
+  .crown::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 8px;
+    left: calc(50% - 10px);
+    background-image: url(../images/crown.svg);
+    background-size: cover;
+    background-position: center;
+    width: 20px;
+    height: 13px; }
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -565,33 +584,14 @@ html {
       padding: 0 7.5rem; } }
 
 .padding-section {
-  padding-top: 4rem; }
+  margin-top: 4rem; }
   .padding-section--info {
-    padding-top: 64px; }
+    margin-top: 64px; }
   @media (min-width: 768px) {
     .padding-section {
-      padding-top: 152px; }
+      margin-top: 152px; }
       .padding-section--info {
-        padding-top: 104px; } }
-
-.main__header {
-  text-align: center;
-  margin-bottom: 41px; }
-  @media (min-width: 768px) {
-    .main__header {
-      margin-bottom: 79px; } }
-
-.main__header::after {
-  content: "";
-  display: block;
-  position: relative;
-  top: 8px;
-  left: calc(50% - 10px);
-  background-image: url(../images/crown.svg);
-  background-size: cover;
-  background-position: center;
-  width: 20px;
-  height: 13px; }
+        margin-top: 104px; } }
 
 .link {
   color: #0075ff;
