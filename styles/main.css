@@ -398,10 +398,14 @@ html {
   -webkit-transition: -webkit-box-shadow 0.3s;
   transition: -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s;
-  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s; }
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s; }
   .form__input:hover {
     -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5); }
+  .form__input:focus {
+    -webkit-box-shadow: 0 0 3px green;
+            box-shadow: 0 0 3px green; }
   .form__input--textarea {
     height: 144px;
     resize: none; }
