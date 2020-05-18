@@ -593,6 +593,9 @@ html {
   @media (min-width: 1024px) {
     .padding-container {
       padding: 0 7.5rem; } }
+  @media (min-width: 1600px) {
+    .padding-container {
+      padding: 0 25vw; } }
 
 .padding-section {
   margin-top: 4rem; }
