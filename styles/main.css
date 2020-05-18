@@ -574,12 +574,19 @@ html {
     width: 20px;
     height: 13px; }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+.button:hover {
+  -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  color: #0075ff;
+  background-color: #fff; }
 
-html {
-  scroll-behavior: smooth; }
+.link {
+  color: #0075ff;
+  font-weight: 700;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s; }
+  .link:hover {
+    opacity: 0.5; }
 
 .padding-container {
   padding: 0 1.25rem; }
@@ -597,18 +604,11 @@ html {
       .padding-section--info {
         margin-top: 104px; } }
 
-.link {
-  color: #0075ff;
-  font-weight: 700;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s; }
-  .link:hover {
-    opacity: 0.5; }
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
-.button:hover {
-  -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  color: #0075ff;
-  background-color: #fff; }
+html {
+  scroll-behavior: smooth; }
 
 /*# sourceMappingURL=main.css.map */
