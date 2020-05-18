@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap");
 @import url(./reset.css);
+html {
+  font-family: "Roboto", sans-serif; }
+
 h1 {
   font-size: 46px;
   line-height: 40px;
@@ -41,9 +44,6 @@ small {
 button {
   font-weight: bold;
   font-size: 16px; }
-
-html {
-  font-family: "Roboto", sans-serif; }
 
 .promo {
   position: relative;
@@ -593,7 +593,10 @@ html {
   @media (min-width: 1024px) {
     .padding-container {
       padding: 0 7.5rem; } }
-  @media (min-width: 1600px) {
+  @media (min-width: 1500px) {
+    .padding-container {
+      padding: 0 20vw; } }
+  @media (min-width: 1800px) {
     .padding-container {
       padding: 0 25vw; } }
 
